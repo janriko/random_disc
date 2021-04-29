@@ -236,20 +236,26 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: Theme.of(context).textTheme.subtitle1.copyWith(color: Colors.black),
                           ),
                           Expanded(
-                            child: IconButton(
+                            child: Container(
                               alignment: Alignment.centerRight,
-                              color: Colors.redAccent,
-                              icon: Visibility(visible: (deleteButtonVisibility && !disc.isActive), child: Icon(Icons.delete)),
-                              onPressed: () {
-                                if (_listOfDiscs.length > 2) {
-                                  _removeNewDisc(disc);
-                                } else {
-                                  final snackBar = SnackBar(
-                                    content: Text("At least 2 discs need to be in the list"),
-                                  );
-                                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                                }
-                              },
+                              child: Visibility(
+                                visible: (deleteButtonVisibility && !disc.isActive),
+                                child: IconButton(
+                                  // alignment: Alignment.centerRight,
+                                  color: Colors.redAccent,
+                                  icon: Icon(Icons.delete),
+                                  onPressed: () {
+                                    if (_listOfDiscs.length > 2) {
+                                      _removeNewDisc(disc);
+                                    } else {
+                                      final snackBar = SnackBar(
+                                        content: Text("At least 2 discs need to be in the list"),
+                                      );
+                                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                                    }
+                                  },
+                                ),
+                              ),
                             ),
                           ),
                         ],

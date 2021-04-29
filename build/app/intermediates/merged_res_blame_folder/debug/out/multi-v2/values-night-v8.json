@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/scheiwe/FlutterProjects/random_disc_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/scheiwe/FlutterProjects/random_disc/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/scheiwe/FlutterProjects/random_disc_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/scheiwe/FlutterProjects/random_disc/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
